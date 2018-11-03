@@ -1,0 +1,59 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.com.servprod.SearchFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <AutoCompleteTextView
+                android:id="@+id/search_autoCompleteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Procure por serviços e produtos"
+                android:text=""
+                android:layout_weight="0.02" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/search_buttonAdd"
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.19"
+                android:background="@drawable/ic_input_add"
+                android:text="" />
+
+            <Button
+                android:id="@+id/search_buttonSearch"
+                android:layout_width="69dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_search_category_default"
+                android:text="" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/search_listView"
+            android:layout_width="match_parent"
+            android:layout_height="247dp"
+            android:layout_weight="0.37" />
+
+    </LinearLayout>
+
+</FrameLayout>
